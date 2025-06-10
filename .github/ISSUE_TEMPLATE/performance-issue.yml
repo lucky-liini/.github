@@ -23,8 +23,27 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### ✅ 사용 예시
-        대시보드 열 때, 차트 데이터 로딩에 7초 이상 걸림
+        ```
+        # 사용예시( 이 코드 블럭 전체를 지워주세요)
 
-        **결과**
-        - 평균 로딩 시간 7.2초 → 기대값 2초 이내
+        ## 🧱 어떤 성능 문제가 있나요?
+        대시보드 열 때, 차트랑 표 데이터 불러오는데 7초 이상 걸림
+
+        ## ⏳ 어느 만큼의 성능 문제가 있나요?
+        - 평균 로딩 시간: 7.2초
+        - 기대값은 2초 이내
+        - 크롬/엣지 둘 다 동일하게 느림
+
+        ### 📸 스크린샷 (선택사항)
+        ![dashboard-delay](https://example.com/dashboard-delay.png)
+
+        ## 💻 재현 방법
+        - 문제 부분: [src/pages/Dashboard.vue에서 mounted 이후 fetch](https://github.com/myorg/myrepo/blob/main/src/pages/Dashboard.vue#L33)
+        - 상황:
+          1. 로그인 후 `/dashboard` 진입
+          2. 화면이 늦게 뜸
+
+        ## 🔍 예상되는 원인은 무엇인가요?
+        1. 차트 데이터 여러 개를 순차 요청하고 있음  
+        2. 불필요한 렌더링 로직이 섞여 있어서 첫 렌더링 느려짐
+        ```

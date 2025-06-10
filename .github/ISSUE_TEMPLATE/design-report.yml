@@ -17,9 +17,18 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### ✅ 사용 예시
-        로그인 버튼 배경색이랑 글자색 대비가 낮아서 잘 안 보임. WCAG 기준 미충족.
+        ```
+        # 사용예시( 이 코드 블럭 전체를 지워주세요)
+        ## 🧱 어떤 디자인 문제가 있나요?
+        로그인 버튼 배경색이랑 글자색 대비가 낮아서 잘 안 보임.  
+        접근성 기준(WCAG)에서 색상 대비 부족한 상태.
 
-        **현재 방식**
+        ### 📸 스크린샷 (선택사항)
+        ![login-button-low-contrast](https://example.com/screenshot.png)
+
+        ## 💻 현재 방식
         - 문제 부분: [src/components/LoginButton.vue의 style 정의](https://github.com/myorg/myrepo/blob/main/src/components/LoginButton.vue#L20)
-        - 파란 배경에 어두운 파란색 글자 / 대비비율 4.5:1 미만
+        - 어떠한 디자인인지:
+          1. 파란 배경에 어두운 파란색 글자
+          2. 대비비율 4.5:1 미만이라 시인성 떨어짐
+        ```
