@@ -1,0 +1,19 @@
+name: 💡 디자인 제보
+description: 서비스에서 발견한 디자인 문제를 간략히 제보해 주세요
+title: "[Design] "
+labels: [Design]
+assignees: []
+
+body:
+  - type: textarea
+    attributes:
+      label: 🧱 어떤 디자인 문제가 있나요?
+      description: 시인성, 배치, 색상 등 문제를 설명해 주세요.
+  - type: textarea
+    attributes:
+      label: 📸 스크린샷 (선택사항)
+      description: 문제가 된 UI를 보여주는 이미지나 캡처
+  - type: textarea
+    attributes:
+      label: 💻 현재 방식
+      description: 어떤 파일의 어떤 방식에서 문제가 발생했는지 적어 주세요.
