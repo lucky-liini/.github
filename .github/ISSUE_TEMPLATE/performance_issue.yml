@@ -1,0 +1,24 @@
+name: ⚡️ 성능 저하 문제 제보
+description: 속도, 반응성 등 성능 문제를 제보해 주세요
+title: "[Performance] "
+labels: [Performance]
+assignees: []
+
+body:
+  - type: textarea
+    attributes:
+      label: 🧱 어떤 성능 문제가 있나요?
+      description: 지연되는 동작이나 병목이 발생하는 기능을 설명해 주세요
+  - type: textarea
+    attributes:
+      label: ⏳ 어느 만큼의 성능 문제가 있나요?
+      description: 수치(초 단위), 비포/애프터 스크린샷 등
+  - type: textarea
+    attributes:
+      label: 📸 스크린샷 (선택사항)
+  - type: textarea
+    attributes:
+      label: 💻 재현 방법
+  - type: textarea
+    attributes:
+      label: 🔍 예상되는 원인

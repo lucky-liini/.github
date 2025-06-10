@@ -1,0 +1,29 @@
+name: 🧊 비기능적 불충족 문제
+description: 성능, 보안, 호환성 등 기능 외 품질 요구사항이 충족되지 않은 문제 제보
+title: "[Non-functional] "
+labels: [Non-functional]
+assignees: []
+
+body:
+  - type: dropdown
+    attributes:
+      label: 🧱 어떤 문제가 있나요?
+      description: 아래 항목 중 해당하는 문제 유형을 선택해 주세요
+      options:
+        - 🔐 보안 (Security)
+        - ⚙️ 신뢰성 (Reliability)
+        - 🧩 확장성 (Scalability)
+        - 🔄 이식성 (Portability)
+  - type: textarea
+    attributes:
+      label: 상세 설명
+      description: 어떤 식으로 위 항목에 문제가 있었는지 작성해 주세요
+  - type: textarea
+    attributes:
+      label: 📸 스크린샷 (선택사항)
+  - type: textarea
+    attributes:
+      label: 💻 재현 방법
+  - type: textarea
+    attributes:
+      label: 🔍 예상되는 원인
