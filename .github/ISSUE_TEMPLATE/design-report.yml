@@ -1,0 +1,25 @@
+name: 💡 디자인 제보
+description: 서비스에서 발견한 디자인 문제를 간략히 제보해 주세요
+title: "[Design] "
+labels: [Design]
+assignees: []
+
+body:
+  - type: textarea
+    attributes:
+      label: 🧱 어떤 디자인 문제가 있나요?
+  - type: textarea
+    attributes:
+      label: 📸 스크린샷 (선택사항)
+  - type: textarea
+    attributes:
+      label: 💻 현재 방식
+  - type: markdown
+    attributes:
+      value: |
+        ### ✅ 사용 예시
+        로그인 버튼 배경색이랑 글자색 대비가 낮아서 잘 안 보임. WCAG 기준 미충족.
+
+        **현재 방식**
+        - 문제 부분: [src/components/LoginButton.vue의 style 정의](https://github.com/myorg/myrepo/blob/main/src/components/LoginButton.vue#L20)
+        - 파란 배경에 어두운 파란색 글자 / 대비비율 4.5:1 미만

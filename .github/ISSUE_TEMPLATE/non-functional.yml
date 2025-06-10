@@ -8,7 +8,6 @@ body:
   - type: dropdown
     attributes:
       label: 🧱 어떤 문제가 있나요?
-      description: 아래 항목 중 해당하는 문제 유형을 선택해 주세요
       options:
         - 🔐 보안 (Security)
         - ⚙️ 신뢰성 (Reliability)
@@ -17,7 +16,6 @@ body:
   - type: textarea
     attributes:
       label: 상세 설명
-      description: 어떤 식으로 위 항목에 문제가 있었는지 작성해 주세요
   - type: textarea
     attributes:
       label: 📸 스크린샷 (선택사항)
@@ -27,3 +25,13 @@ body:
   - type: textarea
     attributes:
       label: 🔍 예상되는 원인
+  - type: markdown
+    attributes:
+      value: |
+        ### ✅ 사용 예시
+        - 🔄 이식성 (Portability)  
+        - iOS Safari 브라우저에서 회원가입 버튼이 클릭되지 않음. Android에선 정상.
+
+        **예상 원인**
+        - `@click` 대신 `@touchend` 이벤트 필요
+        - preventDefault()로 인한 터치 이벤트 차단
